@@ -1,185 +1,75 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio -Bationo EPIPHANE</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Accueil — Apisco Bationo</title>
 
-  <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- ===== HEADER ===== -->
-  <header class="bg-dark text-light py-3 sticky-top shadow-sm">
-    <div class="container d-flex justify-content-between align-items-center">
-      <h1 class="h4 m-0 fw-bold">BATIONO EPIPHANE</h1>
-      <nav>
-        <a href="#about" class="text-light me-3">À propos</a>
-        <a href="#skills" class="text-light me-3">Compétences</a>
-        <a href="#formation" class="text-light me-3">Formation</a>
-        <a href="#projects" class="text-light me-3">Projets</a>
-        <a href="#contact" class="btn btn-info text-dark fw-bold">Contact</a>
-      </nav>
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Bationo Okabonn Epiphane Vianney</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="formation.html">Formation</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-info text-dark ms-lg-3" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="text-center text-light bg-primary py-5" id="home">
+    <div class="container">
+      <img src="assets/img/WhatsApp Image 2025-10-28 at 18.15.02.jpeg" class="rounded-circle mb-3 shadow-lg" width="160" alt="Bationo Okabonn Epiphane Vianney">
+      <h1 class="display-6 fw-bold">Apisco Bationo</h1>
+      <p class="lead">Étudiant en Réseaux & Sécurité • Développeur Full-Stack • Infographiste • Leader communautaire</p>
+      <div class="mt-3">
+        <a href="assets/pdf/CV_Bationo_Epiphane_Vianney.pdf" download class="btn btn-light me-2">📄 Télécharger mon CV</a>
+        <a href="projects.html" class="btn btn-outline-light">Voir mes projets</a>
+      </div>
     </div>
   </header>
 
-  <!-- ===== ACCUEIL ===== -->
-  <section class="text-center text-light bg-primary py-5" id="home">
+  <!-- INTRO -->
+  <section class="py-5 bg-light">
     <div class="container">
-      <img src="assets/img/avatar.jpg" class="rounded-circle mb-3 shadow" width="150" alt="Photo de profil">
-      <h2>Salut 👋, je suis <span class="text-warning fw-bold">Bationo okabonn Epiphane Vianney</span></h2>
-      <p class="lead">Étudiant en Informatique — Développeur Fullstack & Infographiste</p>
-      <a href="assets/pdf/CV.pdf" download class="btn btn-light mt-3 fw-semibold">
-        📄 Télécharger mon CV
-      </a>
-    </div>
-  </section>
-
-  <!-- ===== À PROPOS ===== -->
-  <section id="about" class="py-5 bg-light">
-    <div class="container">
-      <h3 class="text-center mb-4 fw-bold">À propos de moi</h3>
-      <div class="row justify-content-center">
-        <div class="col-md-8">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <h2 class="fw-bold">Résumé</h2>
           <p class="text-muted">
-            Passionné par les technologies web, le design graphique et la communication visuelle, 
-            je suis étudiant en Licence 2 Réseaux & Sécurité Informatique à l’Université Virtuelle de Côte d’Ivoire. 
-            Je combine mes compétences en développement (frontend & backend) avec un sens aigu du design et du community management.
+            Je suis Apisco, étudiant en Licence 3 Réseaux & Sécurité à l'UVCI et actuellement en formation full-stack
+            à Epitech Coding Academy (we-code), promo 2025/2026 — fin prévue en décembre. Je combine développement,
+            design et leadership communautaire pour livrer des projets fiables et visuellement soignés.
           </p>
-          <p class="text-muted">
-            Actuellement en formation full-stack à l’Epitech Coding Academy (we-code, 3 corhote promotion 2025/2026), 
-            je finalise ma formation en décembre. J’y développe des projets modernes en équipe avec les frameworks 
-            et outils les plus récents.
-          </p>
-          <p class="text-muted">
-            Mon objectif : créer des applications performantes, esthétiques et accessibles, 
-            tout en racontant une histoire visuelle forte.
+          <p class="text-muted mb-0">
+            Rôles actuels : <strong>Chef scout catholique</strong>, <strong>Wikimedian de Côte d'Ivoire</strong>,
+            <strong>Secrétaire général</strong> à l'UVCI et <strong>Président de la CEB</strong> de mon quartier.
+            Ces responsabilités montrent mon sens de l'organisation, du travail en équipe et ma capacité à diriger.
           </p>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ===== LANGAGES & COMPÉTENCES ===== -->
-  <section id="skills" class="py-5">
-    <div class="container">
-      <h3 class="text-center mb-4 fw-bold">Langages & Compétences</h3>
-      <div class="row justify-content-center">
-        <div class="col-md-8">
-          <h5 class="fw-bold">Langages & Frameworks</h5>
-          <ul>
-            <li>HTML5, CSS3, Bootstrap 5</li>
-            <li>JavaScript (ES6+)</li>
-            <li>PHP, Nodejs, Laravel, vue js</li>
-            <li>Python, flask, Wordpress, Api Rest</li>
-            <li> Nextjs, Nuxt, React, React Native</li>
-            <li>MySQL (bases de données relationnelles)</li>
-            <li>Mongodb (base de données non réalationnelles)</li>
-            <li>Sqlite</li>
-            <li>Java (bases de la programmation orientée objet)</li>
-            <li>Git & GitHub (contrôle de version)</li>
-            <li>Canva, Photoshop, Illustrator, figma</li>
-            <li> Docker</li>
-          </ul>
-
-          <h5 class="fw-bold mt-3">Compétences Techniques</h5>
-          <ul>
-            <li>Développement front-end responsive (mobile → desktop)</li>
-            <li>Conception et gestion de bases de données</li>
-            <li>Développement backend (Spring Boot, Java)</li>
-            <li>Création de factures PDF et automatisation de tâches</li>
-            <li>Sécurité des réseaux et optimisation des performances</li>
-          </ul>
-
-          <h5 class="fw-bold mt-3">Design & Communication</h5>
-          <ul>
-            <li>Création de logos, maquettes et publications réseaux sociaux</li>
-            <li>Community management & stratégie de communication visuelle</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== FORMATION ===== -->
-  <section id="formation" class="py-5 bg-light">
-    <div class="container">
-      <h3 class="text-center mb-4 fw-bold">Formations & Diplômes</h3>
-      <div class="row justify-content-center">
-        <div class="col-md-8">
-          <ul class="list-group shadow-sm">
-            <li class="list-group-item">
-              <strong>Licence 2 en Réseaux et Sécurité Informatique</strong> — Université Virtuelle de Côte d’Ivoire
-              <br><small>2023 - Aujourd’hui</small>
-            </li>
-            <li class="list-group-item">
-              <strong>Formation Full-Stack — Epitech Coding Academy</strong> (we-code, Promo 2025/2026)
-              <br><small>En cours — Fin prévue en décembre</small>
-            </li>
-            <li class="list-group-item">
-              <strong>Certification en Stratégie de Communication Visuelle</strong> — Hodford, 2020
-            </li>
-            <li class="list-group-item">
-              <strong>Baccalauréat Série D</strong> — Lycée Moderne, 2021
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== PROJETS ===== -->
-  <section id="projects" class="py-5">
-    <div class="container">
-      <h3 class="text-center mb-4 fw-bold">Mes Projets</h3>
-      <div class="row g-4">
-        <!-- Projet 1 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="assets/img/project1.jpg" class="card-img-top" alt="Projet 1">
+        <div class="col-lg-5">
+          <div class="card shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">Application de Facturation</h5>
-              <p class="card-text">
-                Application web fullstack permettant de créer des factures personnalisées en PDF.<br>
-                <small>HTML, CSS, Bootstrap 5, JavaScript, Spring Boot, MySQL</small>
-              </p>
-              <a href="https://github.com/EpitechCodingAcademyPromo2025" target="_blank" class="btn btn-primary btn-sm">Voir sur GitHub</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Projet 2 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="assets/img/project2.jpg" class="card-img-top" alt="Projet 2">
-            <div class="card-body">
-              <h5 class="card-title">Portfolio Personnel</h5>
-              <p class="card-text">
-                Site web responsive développé avec Bootstrap 5 et JavaScript.<br>
-                <small>HTML, CSS, JS, UI/UX</small>
-              </p>
-              <a href="https://github.com/orgs/EpitechCodingAcademyPromo2026/repositories" target="_blank" class="btn btn-primary btn-sm">Voir sur GitHub</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Projet 3 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="assets/img/project3.jpg" class="card-img-top" alt="Projet 3">
-            <div class="card-body">
-              <h5 class="card-title">Design Graphique & Communication</h5>
-              <p class="card-text">
-                Création de visuels et stratégies digitales pour marques et événements.<br>
-                <small>Photoshop, Illustrator, Canva</small>
-              </p>
-              <a href="#" class="btn btn-primary btn-sm" target="_blank">Voir le portfolio</a>
+              <h5 class="card-title">Liens rapides</h5>
+              <ul class="list-unstyled mb-0">
+                <li><a href="https://github.com/EpitechCodingAcademyPromo2025" target="_blank">GitHub — Promo 2025</a></li>
+                <li><a href="https://github.com/orgs/EpitechCodingAcademyPromo2026/repositories" target="_blank">GitHub — Promo 2026</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="projects.html">Projets</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -187,26 +77,19 @@
     </div>
   </section>
 
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="py-5 bg-dark text-light">
-    <div class="container text-center">
-      <h3>Contactez-moi</h3>
-      <p>Email : <a href="mailto:apiscobationo@example.com" class="text-info">apiscobationo@example.com</a></p>
-      <p>Téléphone : +225 00 00 00 00</p>
-      <div class="mt-3">
-        <a href="https://github.com/EpitechCodingAcademyPromo2025" target="_blank" class="btn btn-outline-light me-2">GitHub</a>
-        <a href="https://linkedin.com" target="_blank" class="btn btn-outline-light me-2">LinkedIn</a>
-        <a href="https://instagram.com" target="_blank" class="btn btn-outline-light">Instagram</a>
-      </div>
+  <!-- CTA -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <h3 class="fw-bold">Besoin d'un développeur polyvalent ?</h3>
+      <p class="text-muted">Je travaille sur des projets web, backends, APIs, e-commerce et outils internes.</p>
+      <a href="contact.html" class="btn btn-primary">Contactez-moi</a>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
   <footer class="text-center py-3 bg-secondary text-dark">
-    © <span id="year"></span> Apisco Bationo — Tous droits réservés.
+    © <span id="year"></span> Apisco Bationo — Côte d'Ivoire
   </footer>
 
-  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
