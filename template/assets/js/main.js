@@ -1,10 +1,4 @@
-/**
-* Template Name: Style
-* Template URL: https://bootstrapmade.com/style-bootstrap-portfolio-template/
-* Updated: Jul 02 2025 with Bootstrap v5.3.7
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 (function() {
   "use strict";
@@ -239,5 +233,51 @@
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
+  /**
+   * Formulaire de contact compatible avec .php-email-form
+   */
+  const phpEmailForms = document.querySelectorAll('.php-email-form');
+
+  phpEmailForms.forEach(function(form) {
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      const action = form.getAttribute('action') || 'forms/contact.php';
+      const loading = form.querySelector('.loading');
+      const errorMessage = form.querySelector('.error-message');
+      const sentMessage = form.querySelector('.sent-message');
+
+      loading.style.display = 'block';
+      errorMessage.style.display = 'none';
+      sentMessage.style.display = 'none';
+
+      try {
+        const response = await fetch(action, {
+          method: 'POST',
+          body: formData
+        });
+
+        const result = await response.json();
+
+        loading.style.display = 'none';
+
+        if (result.type === 'success') {
+          sentMessage.style.display = 'block';
+          sentMessage.innerHTML = `<strong>${result.message}</strong><br>${result.details}`;
+          form.reset();
+        } else {
+          errorMessage.style.display = 'block';
+          errorMessage.innerHTML = `<strong>${result.message}</strong><br>${result.details || ''}`;
+        }
+
+      } catch (error) {
+        loading.style.display = 'none';
+        errorMessage.style.display = 'block';
+        errorMessage.innerHTML = "Erreur réseau : impossible d’envoyer le message.";
+      }
+    });
+  });
 
 })();
+
